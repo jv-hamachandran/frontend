@@ -1,6 +1,6 @@
 # Finhashy AI Company Website
 
-Public company website for `www.finhashy.com`.
+Public company website for `finhashy.com`.
 
 This package contains only the public company website. It does not include private
 application screens, backend code, or implementation assets.
@@ -16,6 +16,6 @@ application screens, backend code, or implementation assets.
 
 ## Deploy
 
-Upload these files to the web root for `www.finhashy.com`.
+Upload these files to the web root for `finhashy.com`.
 
 Before launch, replace the demo form target with your final email, CRM, or booking link.

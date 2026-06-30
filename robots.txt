@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.finhashy.com/sitemap.xml
+Sitemap: https://finhashy.com/sitemap.xml

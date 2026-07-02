@@ -1,289 +1,395 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Finhashy AI helps lenders and fintech teams launch intelligent credit journeys with workflow automation, risk signals, integrations, and audit-ready operations."
-    />
-    <link rel="canonical" href="https://finhashy.com/" />
-    <meta property="og:title" content="Finhashy AI | Credit Infrastructure for Modern Lenders" />
-    <meta
-      property="og:description"
-      content="Credit infrastructure for NBFCs and fintech teams: origination, workflow, risk intelligence, integrations, and audit-ready operations."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://finhashy.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>Finhashy AI | Credit Infrastructure for Modern Lenders</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Finhashy AI | Loan Origination System for NBFCs and Fintechs</title>
+  <meta name="description" content="Finhashy AI is an AI-powered loan origination and credit infrastructure platform for NBFCs, fintechs, and lending teams — origination, underwriting, risk, workflow control, and secure integrations." />
+  <meta name="keywords" content="Finhashy, Finhashy AI, LOS, Loan Origination System, credit infrastructure, lending automation, underwriting, NBFC software, fintech, AI lending, credit decisioning" />
+  <meta name="author" content="Finhashy AI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="https://www.finhashy.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.finhashy.com/" />
+  <meta property="og:title" content="Finhashy AI | Credit Infrastructure for Modern Lenders" />
+  <meta property="og:description" content="AI-powered loan origination and credit infrastructure for NBFCs, fintechs, and lending teams. Launch intelligent lending journeys without operational chaos." />
+  <meta property="og:site_name" content="Finhashy AI" />
+  <meta property="og:image" content="https://www.finhashy.com/assets/logo.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Finhashy AI | Credit Infrastructure for Modern Lenders" />
+  <meta name="twitter:description" content="AI-powered loan origination and credit infrastructure for NBFCs, fintechs, and lending teams." />
+  <meta name="twitter:image" content="https://www.finhashy.com/assets/logo.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Structured data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Finhashy AI",
+    "url": "https://www.finhashy.com/",
+    "logo": "https://www.finhashy.com/assets/logo.svg",
+    "description": "AI-powered loan origination and credit infrastructure platform for NBFCs, fintechs, and lending teams.",
+    "email": "info@finhashy.com",
+    "telephone": "+91-97903-41202",
+    "sameAs": [
+      "https://www.linkedin.com/company/fincore-tech"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@finhashy.com",
+      "telephone": "+91-97903-41202",
+      "contactType": "sales"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Finhashy AI",
+    "url": "https://www.finhashy.com/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Finhashy AI home">
-        <span class="brand-mark">F</span>
-        <span>Finhashy AI</span>
+        <img class="brand-mark" src="assets/logo.svg" width="30" height="30" alt="" aria-hidden="true" />
+        <span class="brand-name">Finhashy <span>AI</span></span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+
+      <nav class="site-nav" aria-label="Primary">
         <a href="#platform">Platform</a>
         <a href="#solutions">Solutions</a>
         <a href="#security">Security</a>
         <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm" href="#contact">Talk to us</a>
       </nav>
-      <a class="nav-action" href="#contact">Talk to us</a>
-    </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#platform">Platform</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#security">Security</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="#contact">Talk to us</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1" data-parallax="0.25"></span>
+        <span class="blob blob-2" data-parallax="0.15"></span>
+        <span class="grid-fade"></span>
+      </div>
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Credit infrastructure for NBFCs and fintech teams</p>
-          <h1 id="hero-title">Launch intelligent lending journeys without operational chaos.</h1>
-          <p>
-            Finhashy AI brings loan origination, risk intelligence, workflow control, and secure integrations
-            into one implementation-ready credit platform.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Request a demo</a>
-            <a class="button button-secondary" href="#platform">Explore platform</a>
+          <span class="eyebrow">Credit operating layer</span>
+          <h1>Credit infrastructure for NBFCs and fintech teams</h1>
+          <p class="lead">Launch intelligent lending journeys without operational chaos.</p>
+          <p class="hero-sub">Finhashy AI brings loan origination, risk intelligence, workflow control, and secure integrations into one implementation-ready credit platform.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">Request a demo</a>
+            <a class="btn btn-ghost" href="#platform">Explore platform</a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Credit infrastructure network illustration">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="network-card main-node">
-            <span>Decision layer</span>
-            <strong>Credit OS</strong>
-          </div>
-          <div class="network-card node node-a">
-            <span>Data</span>
-            <strong>Bureau</strong>
-          </div>
-          <div class="network-card node node-b">
-            <span>Ops</span>
-            <strong>Workflow</strong>
-          </div>
-          <div class="network-card node node-c">
-            <span>Risk</span>
-            <strong>Rules</strong>
-          </div>
-          <div class="network-card node node-d">
-            <span>Events</span>
-            <strong>Audit</strong>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="decision-card">
+            <div class="decision-title">Decision layer</div>
+            <div class="decision-core">Credit OS</div>
+            <div class="decision-grid">
+              <span>Data</span>
+              <span>Bureau</span>
+              <span>Ops</span>
+              <span>Workflow</span>
+              <span>Risk</span>
+              <span>Rules</span>
+              <span>Events</span>
+              <span>Audit</span>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="metric-strip" aria-label="Finhashy AI focus areas">
-        <div>
-          <strong>Faster launches</strong>
-          <span>Reusable credit workflows and integration patterns</span>
-        </div>
-        <div>
-          <strong>Better control</strong>
-          <span>Role ownership, policy gates, and audit trails</span>
-        </div>
-        <div>
-          <strong>Smarter decisions</strong>
-          <span>Rules, risk signals, and AI-assisted evaluation</span>
-        </div>
-      </section>
+      <div class="container">
+        <ul class="value-strip">
+          <li>
+            <strong>Faster launches</strong>
+            <span>Reusable credit workflows and integration patterns</span>
+          </li>
+          <li>
+            <strong>Better control</strong>
+            <span>Role ownership, policy gates, and audit trails</span>
+          </li>
+          <li>
+            <strong>Smarter decisions</strong>
+            <span>Rules, risk signals, and AI-assisted evaluation</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <section class="section narrative">
-        <p class="section-kicker">Why Finhashy AI</p>
-        <div class="two-col">
-          <h2>Credit teams need infrastructure, not another tracker.</h2>
-          <div>
-            <p>
-              Lending operations often break between acquisition, underwriting, verification, approval,
-              and disbursement. Teams lose time to manual follow-ups, unclear ownership, duplicate data entry,
-              and disconnected integrations.
-            </p>
-            <p>
-              Finhashy AI is designed as a credit operating layer that keeps policy, workflow, data, and
-              operational evidence connected from the first customer interaction to the final loan event.
-            </p>
-          </div>
-        </div>
-      </section>
+    <!-- ===== Why ===== -->
+    <section class="section" id="why">
+      <div class="container narrow">
+        <span class="section-tag">Why Finhashy AI</span>
+        <h2>Credit teams need infrastructure, not another tracker.</h2>
+        <p>Lending operations often break between acquisition, underwriting, verification, approval, and disbursement. Teams lose time to manual follow-ups, unclear ownership, duplicate data entry, and disconnected integrations.</p>
+        <p>Finhashy AI is designed as a credit operating layer that keeps policy, workflow, data, and operational evidence connected from the first customer interaction to the final loan event.</p>
+      </div>
+    </section>
 
-      <section class="section platform" id="platform">
-        <div class="section-heading">
-          <p class="section-kicker">Platform</p>
-          <h2>One credit stack for origination, intelligence, and operations.</h2>
-        </div>
+    <!-- ===== Platform ===== -->
+    <section class="section section-alt" id="platform">
+      <div class="container">
+        <span class="section-tag">Platform</span>
+        <h2>One credit stack for origination, intelligence, and operations.</h2>
 
-        <div class="platform-grid">
-          <article>
-            <span class="number">01</span>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-num">01</span>
             <h3>Origination journeys</h3>
             <p>Configure intake, role handoffs, customer stages, and review movement for multiple products.</p>
           </article>
-          <article>
-            <span class="number">02</span>
+          <article class="feature-card">
+            <span class="feature-num">02</span>
             <h3>Risk and rules</h3>
             <p>Centralize eligibility, deviation, approval, pricing, and policy checks in a governable decision layer.</p>
           </article>
-          <article>
-            <span class="number">03</span>
+          <article class="feature-card">
+            <span class="feature-num">03</span>
             <h3>Data integrations</h3>
             <p>Connect bureau, bank statement, KYC, documents, fraud, notifications, and partner APIs through controlled adapters.</p>
           </article>
-          <article>
-            <span class="number">04</span>
+          <article class="feature-card">
+            <span class="feature-num">04</span>
             <h3>Operations control</h3>
             <p>Track ownership, pending actions, SLA risk, maker-checker checkpoints, and disbursement readiness.</p>
           </article>
-          <article>
-            <span class="number">05</span>
+          <article class="feature-card">
+            <span class="feature-num">05</span>
             <h3>Event backbone</h3>
             <p>Stream application, workflow, notification, audit, sanction, and disbursement events for downstream systems.</p>
           </article>
-          <article>
-            <span class="number">06</span>
+          <article class="feature-card">
+            <span class="feature-num">06</span>
             <h3>Audit evidence</h3>
             <p>Maintain a structured record of user actions, policy outcomes, stage movement, and integration activity.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="infrastructure-band">
-        <div class="band-copy">
-          <p class="section-kicker">Architecture</p>
-          <h2>Built to sit between your channels, risk teams, and core systems.</h2>
-          <p>
-            Finhashy AI can support branch-led lending, partner journeys, assisted sales, and credit
-            operations through a modular platform approach.
-          </p>
-        </div>
-        <div class="stack-diagram" aria-label="Abstract platform architecture">
-          <div class="layer layer-top">Customer and partner channels</div>
-          <div class="layer layer-mid">Origination, workflow, rules, AI signals</div>
-          <div class="layer layer-bottom">Bureau, KYC, documents, core banking, notifications</div>
-          <div class="connector-line"></div>
-        </div>
-      </section>
+    <!-- ===== Architecture ===== -->
+    <section class="section" id="architecture">
+      <div class="container narrow">
+        <span class="section-tag">Architecture</span>
+        <h2>Built to sit between your channels, risk teams, and core systems.</h2>
+        <p>Finhashy AI can support branch-led lending, partner journeys, assisted sales, and credit operations through a modular platform approach.</p>
+      </div>
 
-      <section class="section solutions" id="solutions">
-        <div class="section-heading">
-          <p class="section-kicker">Solutions</p>
-          <h2>Use cases for lending businesses that need speed and control.</h2>
-        </div>
+      <div class="container">
+        <figure class="arch-figure" data-reveal>
+          <img src="assets/pipeline.svg" alt="Loan origination pipeline from RM to CO, BPO, BCM, OPS and disbursement" loading="lazy" />
+        </figure>
 
-        <div class="solution-list">
-          <article>
+        <div class="arch-columns">
+          <div class="arch-stack" role="list">
+            <div class="arch-layer" role="listitem">
+              <span class="arch-label">Channels</span>
+              <p>Customer and partner channels</p>
+            </div>
+            <div class="arch-connector" aria-hidden="true"></div>
+            <div class="arch-layer arch-core" role="listitem">
+              <span class="arch-label">Finhashy AI</span>
+              <p>Origination, workflow, rules, AI signals</p>
+            </div>
+            <div class="arch-connector" aria-hidden="true"></div>
+            <div class="arch-layer" role="listitem">
+              <span class="arch-label">Systems</span>
+              <p>Bureau, KYC, documents, core banking, notifications</p>
+            </div>
+          </div>
+
+          <figure class="arch-integrations" data-reveal>
+            <img src="assets/integrations.svg" alt="Finhashy AI connected to bureau, KYC, bank statements, documents, core banking and notification systems" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Solutions ===== -->
+    <section class="section section-alt" id="solutions">
+      <div class="container">
+        <span class="section-tag">Solutions</span>
+        <h2>Use cases for lending businesses that need speed and control.</h2>
+
+        <div class="solution-grid">
+          <article class="solution-card">
             <h3>NBFC loan origination</h3>
             <p>Digitize intake, underwriting coordination, approvals, and operational handoffs across teams.</p>
           </article>
-          <article>
+          <article class="solution-card">
             <h3>Embedded credit journeys</h3>
             <p>Power partner-led credit experiences while keeping policy, risk, and operations centrally governed.</p>
           </article>
-          <article>
+          <article class="solution-card">
             <h3>Credit operations modernization</h3>
             <p>Replace spreadsheet-led monitoring with structured ownership, status visibility, and audit trails.</p>
           </article>
-          <article>
+          <article class="solution-card">
             <h3>AI-assisted decisioning</h3>
             <p>Combine rules and risk signals to help teams evaluate customers faster and more consistently.</p>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section outcome-section">
-        <div class="outcome-panel">
-          <p class="section-kicker">Outcomes</p>
-          <h2>Move from manual follow-up to measurable operating control.</h2>
-          <div class="outcome-grid">
-            <div>
-              <strong>Reduce handoff delay</strong>
-              <span>Know who owns the next action and where files are waiting.</span>
-            </div>
-            <div>
-              <strong>Improve policy governance</strong>
-              <span>Keep product rules and approval logic in an auditable layer.</span>
-            </div>
-            <div>
-              <strong>Strengthen compliance posture</strong>
-              <span>Capture evidence for workflow movement, decisions, and approvals.</span>
-            </div>
+    <!-- ===== Outcomes ===== -->
+    <section class="section" id="outcomes">
+      <div class="container">
+        <span class="section-tag">Outcomes</span>
+        <h2>Move from manual follow-up to measurable operating control.</h2>
+
+        <div class="outcome-grid">
+          <div class="outcome-card">
+            <h3>Reduce handoff delay</h3>
+            <p>Know who owns the next action and where files are waiting.</p>
+          </div>
+          <div class="outcome-card">
+            <h3>Improve policy governance</h3>
+            <p>Keep product rules and approval logic in an auditable layer.</p>
+          </div>
+          <div class="outcome-card">
+            <h3>Strengthen compliance posture</h3>
+            <p>Capture evidence for workflow movement, decisions, and approvals.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section security" id="security">
-        <div class="two-col">
-          <div>
-            <p class="section-kicker">Security and trust</p>
-            <h2>Designed for sensitive financial data and controlled integrations.</h2>
-          </div>
-          <ul class="trust-list">
-            <li>Role-based access control and MFA-ready sensitive role flows</li>
-            <li>Tenant-aware APIs, JWT-based authentication, and request validation</li>
-            <li>Encrypted transfer patterns including HTTPS, OAuth, SFTP, SSH, and PGP</li>
-            <li>Event-driven integration patterns for auditable downstream workflows</li>
-            <li>Governed external tool and API access with admin controls</li>
-            <li>Cloud deployment alignment for managed databases, object storage, and IAM</li>
+    <!-- ===== Security ===== -->
+    <section class="section section-dark" id="security">
+      <div class="container">
+        <span class="section-tag">Security and trust</span>
+        <h2>Designed for sensitive financial data and controlled integrations.</h2>
+
+        <ul class="security-list">
+          <li>Role-based access control and MFA-ready sensitive role flows</li>
+          <li>Tenant-aware APIs, JWT-based authentication, and request validation</li>
+          <li>Encrypted transfer patterns including HTTPS, OAuth, SFTP, SSH, and PGP</li>
+          <li>Event-driven integration patterns for auditable downstream workflows</li>
+          <li>Governed external tool and API access with admin controls</li>
+          <li>Cloud deployment alignment for managed databases, object storage, and IAM</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Pilot fit ===== -->
+    <section class="section" id="pilot">
+      <div class="container narrow">
+        <span class="section-tag">Pilot fit</span>
+        <blockquote class="pilot-quote">
+          Best suited for lending teams that have real application volume, multiple approval roles, and operational pain from manual tracking.
+        </blockquote>
+        <p>We are looking to work with NBFCs and fintech teams that want to validate workflow automation, rule governance, audit trails, and AI-assisted credit operations.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-tag">Contact</span>
+          <h2>Build a cleaner credit journey with Finhashy AI.</h2>
+          <p>Share your lending workflow, product type, monthly application volume, and current operational blockers.</p>
+
+          <ul class="contact-info">
+            <li>
+              <span class="ci-icon" aria-hidden="true">✉</span>
+              <a href="mailto:info@finhashy.com">info@finhashy.com</a>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true">☎</span>
+              <a href="tel:+919790341202">+91 97903 41202</a>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true">in</span>
+              <a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">linkedin.com/company/fincore-tech</a>
+            </li>
           </ul>
         </div>
-      </section>
 
-      <section class="section proof">
-        <div class="quote-card">
-          <p class="section-kicker">Pilot fit</p>
-          <blockquote>
-            "Best suited for lending teams that have real application volume, multiple approval roles,
-            and operational pain from manual tracking."
-          </blockquote>
-          <p>
-            We are looking to work with NBFCs and fintech teams that want to validate workflow automation,
-            rule governance, audit trails, and AI-assisted credit operations.
-          </p>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Build a cleaner credit journey with Finhashy AI.</h2>
-          <p>
-            Share your lending workflow, product type, monthly application volume, and current operational blockers.
-          </p>
-        </div>
-        <form action="mailto:hello@finhashy.com" method="post" enctype="text/plain">
-          <label>
-            Name
-            <input name="name" type="text" autocomplete="name" required />
-          </label>
-          <label>
-            Work email
-            <input name="email" type="email" autocomplete="email" required />
-          </label>
-          <label>
-            Company
-            <input name="company" type="text" autocomplete="organization" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button class="button button-primary" type="submit">Request demo</button>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Work email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request demo</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <div>
-        <strong>Finhashy AI</strong>
-        <span>Credit infrastructure for modern lenders.</span>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">
+          <img src="assets/logo.svg" width="26" height="26" alt="" aria-hidden="true" />
+          <span class="brand-name">Finhashy <span>AI</span></span>
+        </span>
+        <p>Credit infrastructure for modern lenders.</p>
+        <ul class="footer-contact">
+          <li><a href="mailto:info@finhashy.com">info@finhashy.com</a></li>
+          <li><a href="tel:+919790341202">+91 97903 41202</a></li>
+          <li><a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
-      <div class="footer-links">
-        <a href="#platform">Platform</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#security">Security</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span id="year"></span> Finhashy AI. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>

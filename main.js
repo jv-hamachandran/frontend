@@ -38,13 +38,19 @@
   }
 
   /* ---- Scroll reveal ---- */
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   var revealTargets = document.querySelectorAll(
     '.section h2, .feature-card, .solution-card, .outcome-card, .value-strip li, ' +
     '.arch-layer, .security-list li, .pilot-quote, .contact-form, .hero-copy, .hero-visual'
   );
   revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
-  if ('IntersectionObserver' in window) {
+  // Elements already marked with data-reveal in the HTML are observed too.
+  var observeList = [].slice.call(revealTargets)
+    .concat([].slice.call(document.querySelectorAll('[data-reveal]')));
+
+  if ('IntersectionObserver' in window && !prefersReduced) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -53,10 +59,44 @@
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealTargets.forEach(function (el) { observer.observe(el); });
+    observeList.forEach(function (el) { observer.observe(el); });
   } else {
-    revealTargets.forEach(function (el) { el.classList.add('is-visible'); });
+    observeList.forEach(function (el) { el.classList.add('is-visible'); });
   }
+
+  /* ---- Scroll-linked effects: progress bar, parallax, showcase scale ---- */
+  var progressBar = document.getElementById('scroll-progress');
+  var parallaxEls = [].slice.call(document.querySelectorAll('[data-parallax]'));
+  var ticking = false;
+
+  function onScroll() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+    // progress bar
+    if (progressBar) {
+      var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = pct + '%';
+    }
+
+    if (prefersReduced) { ticking = false; return; }
+
+    // hero parallax
+    parallaxEls.forEach(function (el) {
+      var speed = parseFloat(el.getAttribute('data-parallax')) || 0.2;
+      el.style.transform = 'translate3d(0,' + (scrollTop * speed) + 'px,0)';
+    });
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+  onScroll();
 
   /* ---- Contact form (client-side handling / demo) ---- */
   var form = document.getElementById('contact-form');

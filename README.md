@@ -8,11 +8,26 @@ static host (S3 + CloudFront, Netlify, Vercel, GitHub Pages, Nginx, etc.).
 
 ```
 website/
-├── index.html    # All page content (single-page marketing site)
-├── styles.css    # Design system + responsive layout
-├── main.js       # Nav toggle, scroll reveal, contact form handling
+├── index.html      # All page content (single-page marketing site)
+├── styles.css      # Design system + responsive layout (white + green theme)
+├── main.js         # Nav toggle, scroll reveal, scroll progress, parallax, form
+├── three-hero.js   # Three.js WebGL particle-network animation in the hero
+├── favicon.ico     # Root favicon (used by Google Search)
+├── robots.txt      # Crawler directives + sitemap pointer
+├── sitemap.xml     # Sitemap
+├── make-icons.ps1  # Regenerates raster favicons from the logo
+├── assets/         # Logo + diagram SVGs + PNG favicons
 └── README.md
 ```
+
+## Dependencies
+
+The site is dependency-free except the hero animation, which loads **Three.js**
+(r128) from a CDN via a classic `<script>` tag. If it fails to load (offline) or
+the browser prefers reduced motion, `three-hero.js` silently skips and the CSS
+gradient background is shown instead — nothing breaks. To make the animation work
+fully offline, download `three.min.js` (r128) into `assets/` and point the script
+tag at it.
 
 ## Sections
 

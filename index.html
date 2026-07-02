@@ -3,38 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Finhashy AI — Credit infrastructure for NBFCs and fintech teams</title>
-  <meta name="description" content="Finhashy AI brings loan origination, risk intelligence, workflow control, and secure integrations into one implementation-ready credit platform for NBFCs and fintech teams." />
-  <meta name="theme-color" content="#0b1020" />
+
+  <!-- Primary SEO -->
+  <title>Finhashy AI | Loan Origination System for NBFCs and Fintechs</title>
+  <meta name="description" content="Finhashy AI is an AI-powered loan origination and credit infrastructure platform for NBFCs, fintechs, and lending teams — origination, underwriting, risk, workflow control, and secure integrations." />
+  <meta name="keywords" content="Finhashy, Finhashy AI, LOS, Loan Origination System, credit infrastructure, lending automation, underwriting, NBFC software, fintech, AI lending, credit decisioning" />
+  <meta name="author" content="Finhashy AI" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2e7d64" />
+  <link rel="canonical" href="https://www.finhashy.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Finhashy AI — Credit infrastructure for modern lenders" />
-  <meta property="og:description" content="Launch intelligent lending journeys without operational chaos. Origination, risk intelligence, workflow control, and secure integrations in one credit platform." />
+  <meta property="og:url" content="https://www.finhashy.com/" />
+  <meta property="og:title" content="Finhashy AI | Credit Infrastructure for Modern Lenders" />
+  <meta property="og:description" content="AI-powered loan origination and credit infrastructure for NBFCs, fintechs, and lending teams. Launch intelligent lending journeys without operational chaos." />
   <meta property="og:site_name" content="Finhashy AI" />
+  <meta property="og:image" content="https://www.finhashy.com/assets/favicon-192.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Finhashy AI | Credit Infrastructure for Modern Lenders" />
+  <meta name="twitter:description" content="AI-powered loan origination and credit infrastructure for NBFCs, fintechs, and lending teams." />
+  <meta name="twitter:image" content="https://www.finhashy.com/assets/favicon-192.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicons (Google Search shows the site icon from these; keep /favicon.ico at the domain root) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+  <!-- Structured data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Finhashy AI",
+    "url": "https://www.finhashy.com/",
+    "logo": "https://www.finhashy.com/assets/favicon-192.png",
+    "description": "AI-powered loan origination and credit infrastructure platform for NBFCs, fintechs, and lending teams.",
+    "email": "info@finhashy.com",
+    "telephone": "+91-97903-41202",
+    "sameAs": [
+      "https://www.linkedin.com/company/fincore-tech"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@finhashy.com",
+      "telephone": "+91-97903-41202",
+      "contactType": "sales"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Finhashy AI",
+    "url": "https://www.finhashy.com/"
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- ===== Header ===== -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Finhashy AI home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-hidden="true">
-            <path d="M4 24 L12 12 L18 18 L28 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="28" cy="6" r="3" fill="currentColor"/>
-          </svg>
-        </span>
+        <img class="brand-mark" src="assets/logo.svg" width="30" height="30" alt="" aria-hidden="true" />
         <span class="brand-name">Finhashy <span>AI</span></span>
       </a>
 
       <nav class="site-nav" aria-label="Primary">
+        <a href="#products">Products</a>
         <a href="#platform">Platform</a>
         <a href="#solutions">Solutions</a>
         <a href="#security">Security</a>
@@ -48,6 +97,7 @@
     </div>
 
     <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#products">Products</a>
       <a href="#platform">Platform</a>
       <a href="#solutions">Solutions</a>
       <a href="#security">Security</a>
@@ -59,6 +109,12 @@
   <main id="main">
     <!-- ===== Hero ===== -->
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-canvas" id="hero-canvas"></div>
+        <span class="blob blob-1" data-parallax="0.25"></span>
+        <span class="blob blob-2" data-parallax="0.15"></span>
+        <span class="grid-fade"></span>
+      </div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Credit operating layer</span>
@@ -104,6 +160,52 @@
             <span>Rules, risk signals, and AI-assisted evaluation</span>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===== Products ===== -->
+    <section class="section section-alt" id="products">
+      <div class="container">
+        <span class="section-tag">Products</span>
+        <h2>Two products, one credit stack.</h2>
+        <p>Finhashy AI ships a decision engine and a loan origination system. Use them together for an end-to-end lending platform, or plug either into your existing systems.</p>
+
+        <div class="product-grid">
+          <article class="product-card" data-reveal>
+            <div class="product-head">
+              <span class="product-badge">BRE</span>
+              <span class="product-tag">AI Decision Engine</span>
+            </div>
+            <h3>Finhashy BRE</h3>
+            <p class="product-lead">An AI-powered business rules and decision engine.</p>
+            <p>Configurable policy rules combined with a multi-engine AI pipeline — bureau, bank-statement, KYC, fraud, IP intelligence, document, and offer engines with ML ensemble scoring — served through a real-time decision API.</p>
+            <ul class="product-list">
+              <li>Configurable rule sets, deviations, and policy governance</li>
+              <li>Multi-signal risk and fraud scoring</li>
+              <li>ML ensemble decisioning with explainability</li>
+              <li>Real-time decision API</li>
+            </ul>
+          </article>
+
+          <article class="product-card" data-reveal>
+            <div class="product-head">
+              <span class="product-badge product-badge-alt">AI-Powered</span>
+              <span class="product-tag">Loan Origination · LOS</span>
+            </div>
+            <h3>Finhashy LOS</h3>
+            <p class="product-lead">An AI-powered, multi-tenant loan origination system.</p>
+            <p>End-to-end origination across RM, CO, BPO, BCM, and OPS roles — lead capture, KYC, underwriting, field verification, sanction, and disbursement — with AI-assisted decisioning, audit trails, and tenant-isolated security.</p>
+            <ul class="product-list">
+              <li>AI-assisted underwriting and credit decisioning</li>
+              <li>Role-based workflow: RM → CO → BPO → BCM → OPS</li>
+              <li>KYC, bureau, and account-aggregator / bank-statement integrations</li>
+              <li>Sanction letters, NACH mandates, and disbursement</li>
+              <li>Multi-tenant, audit-ready, and secure by design</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="product-note">The BRE powers the LOS decisioning layer — adopt them together, or run either independently alongside your current stack.</p>
       </div>
     </section>
 
@@ -167,21 +269,31 @@
       </div>
 
       <div class="container">
-        <div class="arch-stack" role="list">
-          <div class="arch-layer" role="listitem">
-            <span class="arch-label">Channels</span>
-            <p>Customer and partner channels</p>
+        <figure class="arch-figure" data-reveal>
+          <img src="assets/pipeline.svg" alt="Loan origination pipeline from RM to CO, BPO, BCM, OPS and disbursement" loading="lazy" />
+        </figure>
+
+        <div class="arch-columns">
+          <div class="arch-stack" role="list">
+            <div class="arch-layer" role="listitem">
+              <span class="arch-label">Channels</span>
+              <p>Customer and partner channels</p>
+            </div>
+            <div class="arch-connector" aria-hidden="true"></div>
+            <div class="arch-layer arch-core" role="listitem">
+              <span class="arch-label">Finhashy AI</span>
+              <p>Origination, workflow, rules, AI signals</p>
+            </div>
+            <div class="arch-connector" aria-hidden="true"></div>
+            <div class="arch-layer" role="listitem">
+              <span class="arch-label">Systems</span>
+              <p>Bureau, KYC, documents, core banking, notifications</p>
+            </div>
           </div>
-          <div class="arch-connector" aria-hidden="true"></div>
-          <div class="arch-layer arch-core" role="listitem">
-            <span class="arch-label">Finhashy AI</span>
-            <p>Origination, workflow, rules, AI signals</p>
-          </div>
-          <div class="arch-connector" aria-hidden="true"></div>
-          <div class="arch-layer" role="listitem">
-            <span class="arch-label">Systems</span>
-            <p>Bureau, KYC, documents, core banking, notifications</p>
-          </div>
+
+          <figure class="arch-integrations" data-reveal>
+            <img src="assets/integrations.svg" alt="Finhashy AI connected to bureau, KYC, bank statements, documents, core banking and notification systems" loading="lazy" />
+          </figure>
         </div>
       </div>
     </section>
@@ -271,6 +383,21 @@
           <span class="section-tag">Contact</span>
           <h2>Build a cleaner credit journey with Finhashy AI.</h2>
           <p>Share your lending workflow, product type, monthly application volume, and current operational blockers.</p>
+
+          <ul class="contact-info">
+            <li>
+              <span class="ci-icon" aria-hidden="true">✉</span>
+              <a href="mailto:info@finhashy.com">info@finhashy.com</a>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true">☎</span>
+              <a href="tel:+919790341202">+91 97903 41202</a>
+            </li>
+            <li>
+              <span class="ci-icon" aria-hidden="true">in</span>
+              <a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">linkedin.com/company/fincore-tech</a>
+            </li>
+          </ul>
         </div>
 
         <form class="contact-form" id="contact-form" novalidate>
@@ -301,21 +428,26 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="brand-name">Finhashy <span>AI</span></span>
+        <span class="footer-logo">
+          <img src="assets/logo.svg" width="26" height="26" alt="" aria-hidden="true" />
+          <span class="brand-name">Finhashy <span>AI</span></span>
+        </span>
         <p>Credit infrastructure for modern lenders.</p>
+        <ul class="footer-contact">
+          <li><a href="mailto:info@finhashy.com">info@finhashy.com</a></li>
+          <li><a href="tel:+919790341202">+91 97903 41202</a></li>
+          <li><a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
       </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="#platform">Platform</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#security">Security</a>
-        <a href="#contact">Contact</a>
-      </nav>
     </div>
     <div class="container footer-bottom">
       <span>&copy; <span id="year"></span> Finhashy AI. All rights reserved.</span>
     </div>
   </footer>
 
+  <!-- Three.js (classic UMD build, exposes global THREE). three-hero.js degrades gracefully if this fails to load (e.g. offline). -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="three-hero.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,64 +1,88 @@
-# Finhashy AI — Company Website
+# Finhashy AI Company Site
 
-A self-contained, responsive marketing website for Finhashy AI. No build step, no
-dependencies — plain HTML, CSS, and vanilla JavaScript. It can be hosted on any
-static host (S3 + CloudFront, Netlify, Vercel, GitHub Pages, Nginx, etc.).
+A clean light company website for Finhashy AI, positioned around two lending
+products:
 
-## Structure
+- Finhashy LOS: loan origination workflow from RM intake to OPS/disbursement.
+- Finhashy AI BRE: AI-assisted business rule engine for eligibility, policy
+  checks, scorecards, deviations, explainability, and decision APIs.
 
+The public site is intentionally outcome-led. It describes the company,
+platform, LOS, AI BRE, workflow, governance, and integrations without exposing
+internal product screens or implementation details.
+
+## Tech Stack
+
+- Vite for local development and production builds
+- Vanilla JavaScript
+- Three.js for the subtle hero wireframe scene
+- GSAP ScrollTrigger for scroll animation
+- Lenis for smooth scrolling
+- Inter via Google Fonts
+
+## Local Development
+
+Run from this `website/` folder:
+
+```bash
+npm install
+npm run dev
 ```
+
+Open:
+
+```text
+http://localhost:5173
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+The Vite source lives under `src/` and builds into `dist/`.
+
+For GitHub Pages branch/root hosting, the current production build is also
+checked in at the repo root:
+
+- `index.html`
+- `assets/`
+- `CNAME`
+- `.nojekyll`
+
+After future source edits, run `npm run build`, then copy `dist/index.html` and
+`dist/assets/` back to the repo root before committing.
+
+## Project Structure
+
+```text
 website/
-├── index.html      # All page content (single-page marketing site)
-├── styles.css      # Design system + responsive layout (white + green theme)
-├── main.js         # Nav toggle, scroll reveal, scroll progress, parallax, form
-├── three-hero.js   # Three.js WebGL particle-network animation in the hero
-├── favicon.ico     # Root favicon (used by Google Search)
-├── robots.txt      # Crawler directives + sitemap pointer
-├── sitemap.xml     # Sitemap
-├── make-icons.ps1  # Regenerates raster favicons from the logo
-├── assets/         # Logo + diagram SVGs + PNG favicons
-└── README.md
+|-- index.html          # Built static page for GitHub Pages
+|-- assets/             # Built static assets for GitHub Pages
+|-- CNAME               # www.finhashy.com
+|-- vite.config.js
+|-- package.json
+|-- package-lock.json
+|-- README.md
+`-- src/
+    |-- index.html      # Editable site content
+    |-- main.js         # Lenis + GSAP + scene wiring
+    |-- scene.js        # Three.js hero wireframe scene
+    `-- style.css       # Light theme + responsive layout
 ```
 
-## Dependencies
+## Content Focus
 
-The site is dependency-free except the hero animation, which loads **Three.js**
-(r128) from a CDN via a classic `<script>` tag. If it fails to load (offline) or
-the browser prefers reduced motion, `three-hero.js` silently skips and the CSS
-gradient background is shown instead — nothing breaks. To make the animation work
-fully offline, download `three.min.js` (r128) into `assets/` and point the script
-tag at it.
+- Loan origination system for NBFCs, banks, fintechs, and lending teams
+- RM, CO, BPO, BCM, OPS, admin, and auditor workflow ownership
+- KYC, documents, bureau/data, underwriting, sanction, agreement, mandate,
+  disbursement, and audit trail
+- AI BRE for policy rules, FOIR, DTI, LTV, deviations, risk scoring,
+  explainability, decision APIs, and fallback scorecards
 
-## Sections
+## Contact
 
-Header · Hero (decision-layer visual) · Why Finhashy AI · Platform (6 capabilities) ·
-Architecture · Solutions · Outcomes · Security & trust · Pilot fit · Contact · Footer
-
-## Run locally
-
-It's static, so just open `index.html` in a browser. To serve it (recommended, so
-in-page anchors and relative paths behave like production):
-
-```powershell
-cd website
-python -m http.server 4321
-# then open http://localhost:4321
-```
-
-## Wiring the contact form
-
-`main.js` currently validates input and shows a confirmation message — it does **not**
-send data anywhere yet. To connect it, replace the marked block in the `submit`
-handler with a `fetch()` POST to your CRM or a demo-request endpoint. For example,
-you could point it at the LOS backend or a dedicated marketing endpoint.
-
-## Branding
-
-- Primary: indigo `#4f46e5`
-- Accents: cyan `#06b6d4`, teal `#14b8a6`
-- Dark surfaces: navy `#0b1020` / `#111834`
-- Typeface: Inter (loaded from Google Fonts)
-
-## Deploy
-
-Upload the four files as-is to any static host. No environment variables required.
+- Email: `info@finhashy.com`
+- Phone: `+91 97903 41202`
+- LinkedIn: `https://www.linkedin.com/company/fincore-tech`

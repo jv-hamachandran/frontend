@@ -1,237 +1,87 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Finhashy AI | AI LOS and BRE for NBFCs and Fintechs</title>
-  <meta name="description" content="Finhashy AI combines a loan origination system and AI-powered business rule engine for NBFCs, fintechs, banks, and lending teams: intake, KYC, underwriting, workflow, sanction, disbursement, and audit." />
-  <meta name="theme-color" content="#ffffff" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finhashy AI</title>
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Finhashy AI | AI LOS and BRE for Modern Lenders" />
-  <meta property="og:description" content="Origination workflow, AI BRE decisioning, underwriting, policy checks, sanction, disbursement, and audit-ready lending operations." />
-  <meta property="og:site_name" content="Finhashy AI" />
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+body{
+    background:#030712;
+    color:#fff;
+}
+
+.nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(3,7,18,.75);
+    backdrop-filter:blur(20px);
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#030712,#111827);
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:800;
+}
+
+.grad{
+    background:linear-gradient(90deg,#22d3ee,#3b82f6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#2563eb,#22d3ee);
+    color:#fff;
+    text-decoration:none;
+    margin-top:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+</style>
+
 </head>
+
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="progress" id="progress" aria-hidden="true"></div>
 
-  <header class="nav" id="nav">
-    <a class="brand" href="#top" aria-label="Finhashy AI home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="26" height="26">
-          <rect x="4" y="4" width="13" height="13" rx="4" fill="none" stroke="url(#lg)" stroke-width="2.6"/>
-          <rect x="15" y="15" width="13" height="13" rx="4" fill="none" stroke="url(#lg)" stroke-width="2.6"/>
-          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/>
-          </linearGradient></defs>
-        </svg>
-      </span>
-      <span class="brand-name">Finhashy<span>AI</span></span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#products">Products</a>
-      <a href="#solution">LOS</a>
-      <a href="#ai">AI BRE</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#why">Why us</a>
-    </nav>
-    <a class="btn btn-primary btn-sm" href="#contact">Book a Demo</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
+<header class="nav">
+    <h2>Finhashy AI</h2>
+    <a class="btn" href="#">Book Demo</a>
+</header>
 
-  <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="#products">Products</a>
-    <a href="#solution">LOS</a>
-    <a href="#ai">AI BRE</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#why">Why us</a>
-    <a class="btn btn-primary" href="#contact">Book a Demo</a>
-  </div>
-
-  <main id="top">
-    <section class="hero" id="hero">
-      <div class="scene" id="scene" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-grid-lines" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <span class="pill" data-hero>LOS + AI BRE for lenders</span>
-        <h1 class="hero-title">
-          <span data-hero-line>Loan Origination</span>
-          <span data-hero-line>System with</span>
-          <span data-hero-line class="grad">AI BRE</span>
-        </h1>
-        <p class="hero-sub" data-hero>Finhashy AI connects loan origination workflow, policy rules, AI-assisted credit decisions, KYC, underwriting, sanction, disbursement, and audit control in one lending operating layer.</p>
-        <div class="hero-cta" data-hero>
-          <a class="btn btn-primary" href="#contact">Book a Demo</a>
-          <a class="btn btn-outline" href="#products">Explore Products</a>
-        </div>
-        <div class="hero-stats" data-hero>
-          <div><strong>LOS</strong><span>lead to disbursement journey</span></div>
-          <div><strong>BRE</strong><span>policy + AI decisioning</span></div>
-          <div><strong>Audit</strong><span>role-based control history</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="problem">
-      <div class="container">
-        <span class="eyebrow" data-animate>The problem</span>
-        <h2 class="section-title" data-animate>Loan files get delayed when workflow and decisioning live apart.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card"><h3>Manual handoffs</h3><p>RM, credit, verification, sanction, and OPS teams lose time tracking ownership across calls, messages, and spreadsheets.</p></div>
-          <div class="glass card"><h3>Policy leakage</h3><p>Credit policies, deviation rules, FOIR/LTV checks, and approval matrices are hard to enforce when rules sit outside the workflow.</p></div>
-          <div class="glass card"><h3>Slow underwriting</h3><p>Applications wait for KYC, bureau, bank statement review, document checks, and manual credit notes.</p></div>
-          <div class="glass card"><h3>Missing audit trail</h3><p>Operations teams need clear proof of who moved a case, what changed, and why a decision was made.</p></div>
-          <div class="glass card"><h3>Disconnected decisioning</h3><p>AI scores, business rules, fraud signals, and reviewer comments often live in different systems.</p></div>
-          <div class="glass card"><h3>Disbursement risk</h3><p>Files reach OPS without complete checklists, mandates, penny-drop status, or final maker-checker evidence.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="products">
-      <div class="container">
-        <span class="eyebrow" data-animate>Products</span>
-        <h2 class="section-title" data-animate>Two products, one lending stack.</h2>
-        <p class="section-lead" data-animate>Use Finhashy LOS and Finhashy AI BRE together for end-to-end lending operations, or connect the BRE to an existing LOS as a decisioning layer.</p>
-        <div class="grid grid-3 stagger">
-          <div class="glass card soln"><span class="num">LOS</span><h3>Finhashy LOS</h3><p>A multi-role loan origination system for lead capture, KYC, document collection, credit review, sanction, OPS checklist, disbursement, and post-decision evidence.</p></div>
-          <div class="glass card soln"><span class="num">BRE</span><h3>Finhashy AI BRE</h3><p>An AI-assisted business rule engine for eligibility, scorecards, deviations, fraud signals, offer generation, explainability, and real-time decision APIs.</p></div>
-          <div class="glass card soln"><span class="num">Together</span><h3>Connected Credit OS</h3><p>Workflow events, policy gates, AI recommendations, and audit history stay connected from first customer touch to final loan action.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="solution">
-      <div class="container">
-        <span class="eyebrow" data-animate>LOS layer</span>
-        <h2 class="section-title" data-animate>Control every lending stage from RM to OPS.</h2>
-        <p class="section-lead" data-animate>The LOS keeps applications, owners, stages, documents, decisions, checklists, and audit evidence in one controlled workflow.</p>
-        <div class="grid grid-3 stagger">
-          <div class="glass card soln"><span class="num">01</span><h3>Role-based queues</h3><p>RM, CO, BPO, BCM, OPS, admin, and auditor views with clear ownership and next action visibility.</p></div>
-          <div class="glass card soln"><span class="num">02</span><h3>Configurable stages</h3><p>Lead, application, KYC, verification, underwriting, sanction, agreement, mandate, and disbursement journeys.</p></div>
-          <div class="glass card soln"><span class="num">03</span><h3>Document control</h3><p>Collect, classify, verify, generate, and track documents such as KFS, MITC, sanction letters, agreements, and OPS evidence.</p></div>
-          <div class="glass card soln"><span class="num">04</span><h3>Maker-checker flow</h3><p>Approval controls for sanction and disbursement so critical actions have review, authority, and auditability.</p></div>
-          <div class="glass card soln"><span class="num">05</span><h3>Tenant and product setup</h3><p>Support multiple products, branches, partners, roles, limits, fees, and policy parameters per lending team.</p></div>
-          <div class="glass card soln"><span class="num">06</span><h3>SLA and audit visibility</h3><p>Track current owner, current stage, pending action, turnaround risk, escalations, and full application history.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="features">
-      <div class="container">
-        <span class="eyebrow" data-animate>Core platform</span>
-        <h2 class="section-title" data-animate>Core capabilities for digital lending operations.</h2>
-        <div class="grid grid-4 stagger">
-          <div class="glass feature"><div class="fic">01</div><h3>Application intake</h3><p>Capture leads, applicants, products, branches, partners, and required documents.</p></div>
-          <div class="glass feature"><div class="fic">02</div><h3>KYC and verification</h3><p>Structure identity checks, document review, bureau pull, and field or back-office verification.</p></div>
-          <div class="glass feature"><div class="fic">03</div><h3>AI BRE decisioning</h3><p>Run eligibility, scorecards, deviation checks, AI risk signals, and recommendation logic.</p></div>
-          <div class="glass feature"><div class="fic">04</div><h3>Credit workbench</h3><p>Give credit teams a full case context for underwriting, queries, conditions, and approvals.</p></div>
-          <div class="glass feature"><div class="fic">05</div><h3>Sanction workflow</h3><p>Generate offers, terms, conditions, sanction letters, KFS, and approval evidence.</p></div>
-          <div class="glass feature"><div class="fic">06</div><h3>OPS checklist</h3><p>Control mandates, penny-drop, agreement checks, disbursement readiness, and final maker-checker.</p></div>
-          <div class="glass feature"><div class="fic">07</div><h3>Integrations</h3><p>Connect bureau, KYC, OCR, bank statements, NACH, payments, notifications, and LMS systems.</p></div>
-          <div class="glass feature"><div class="fic">08</div><h3>Audit and security</h3><p>RBAC, tenant isolation, PII masking, event history, and policy-gate evidence for every file.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ai">
-      <div class="container">
-        <span class="eyebrow" data-animate>AI BRE layer</span>
-        <h2 class="section-title" data-animate>Business rules plus AI for explainable credit decisions.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card ai"><h3>Policy rule engine</h3><p>Configure product rules, FOIR, DTI, LTV, tenure, bureau, exposure, deviations, and approval conditions.</p></div>
-          <div class="glass card ai"><h3>AI risk scoring</h3><p>Use ML-assisted probability of default, fraud indicators, affordability signals, and alternate-data inputs.</p></div>
-          <div class="glass card ai"><h3>Decision API</h3><p>Return approve, reject, conditional approve, query, manual review, pricing, limits, reasons, and audit metadata.</p></div>
-          <div class="glass card ai"><h3>Explainability</h3><p>Show why a decision was recommended with reviewer-friendly reasons and regulator-ready evidence.</p></div>
-          <div class="glass card ai"><h3>Underwriting copilot</h3><p>Generate case summaries, missing-data prompts, policy exceptions, and reviewer notes from the full application file.</p></div>
-          <div class="glass card ai"><h3>Fallback control</h3><p>Keep deterministic scorecards and manual-review paths available when live AI or vendor data is unavailable.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="built-for">
-      <div class="container">
-        <span class="eyebrow" data-animate>Built for</span>
-        <h2 class="section-title" data-animate>Made for lending teams that need control, speed, and evidence.</h2>
-        <div class="chips stagger">
-          <span class="glass chip">NBFCs</span>
-          <span class="glass chip">Banks</span>
-          <span class="glass chip">Fintech startups</span>
-          <span class="glass chip">Co-lending teams</span>
-          <span class="glass chip">Credit teams</span>
-          <span class="glass chip">Operations teams</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="workflow">
-      <div class="container">
-        <span class="eyebrow" data-animate>Workflow</span>
-        <h2 class="section-title" data-animate>A connected journey from lead to disbursement.</h2>
-        <div class="flow" id="flow">
-          <div class="flow-line" aria-hidden="true"><span class="flow-fill" id="flow-fill"></span></div>
-          <div class="flow-steps">
-            <div class="flow-step"><span class="dot"></span><strong>RM Intake</strong><p>Lead, product, applicant, and document capture.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>KYC &amp; Docs</strong><p>Identity, document, and checklist readiness.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Bureau/Data</strong><p>Bureau, bank statement, income, and fraud signals.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>AI BRE</strong><p>Eligibility, scorecard, deviation, and recommendation.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Credit Review</strong><p>CO/BCM review, queries, conditions, and approval.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Sanction</strong><p>Offer, terms, KFS, MITC, and sanction evidence.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>OPS Check</strong><p>Agreement, mandate, penny-drop, and maker-checker.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Disburse</strong><p>Payout execution, final lock, and audit trail.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="why">
-      <div class="container">
-        <span class="eyebrow" data-animate>Why Finhashy AI</span>
-        <h2 class="section-title" data-animate>Built to reduce TAT without losing governance.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card why"><h3>Reduce turnaround time</h3><p>Automate routing, data checks, decision triggers, queries, and OPS readiness instead of chasing files manually.</p></div>
-          <div class="glass card why"><h3>Enforce policy consistently</h3><p>Keep business rules, AI signals, deviations, and approval authority connected to each workflow movement.</p></div>
-          <div class="glass card why"><h3>Improve audit confidence</h3><p>Maintain complete ownership, stage, decision, document, and maker-checker history for every application.</p></div>
-          <div class="glass card why"><h3>Launch products faster</h3><p>Configure lending journeys, product parameters, rules, documents, and roles without rebuilding the operating model.</p></div>
-          <div class="glass card why"><h3>Integrate cleanly</h3><p>Connect vendor systems and internal platforms through APIs while keeping one operational source of truth.</p></div>
-          <div class="glass card why"><h3>Support AI safely</h3><p>Use AI recommendations with explanations, fallback scorecards, and human review paths where governance requires it.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="contact">
-      <div class="cta-glow" aria-hidden="true"></div>
-      <div class="container cta-inner" data-animate>
-        <h2>Modernize lending with LOS + AI BRE.</h2>
-        <p>Talk to us if you want faster loan processing, stronger policy control, and audit-ready digital lending operations.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:info@finhashy.com">Contact Us</a>
-          <a class="btn btn-outline" href="mailto:info@finhashy.com?subject=Book%20a%20Demo">Book Demo</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <span class="brand-name">Finhashy<span>AI</span></span>
-        <p>AI-powered LOS and BRE for modern lending teams.</p>
-      </div>
-      <div class="footer-contact">
-        <a href="mailto:info@finhashy.com">info@finhashy.com</a>
-        <a href="tel:+919790341202">+91 97903 41202</a>
-        <a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+<section class="hero">
+    <div>
+        <h1>Loan Origination System <br><span class="grad">with AI BRE</span></h1>
+        <p>AI-powered LOS for NBFCs, Banks & Fintechs</p>
+        <a class="btn" href="#">Get Started</a>
     </div>
-    <div class="container footer-bottom">&copy; <span id="year"></span> Finhashy AI. All rights reserved.</div>
-  </footer>
+</section>
 
-  <script type="module" src="/main.js"></script>
 </body>
+</html></body>

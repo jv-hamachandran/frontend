@@ -1,237 +1,30 @@
- <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Finhashy AI | AI LOS and BRE for NBFCs and Fintechs</title>
-  <meta name="description" content="Finhashy AI combines a loan origination system and AI-powered business rule engine for NBFCs, fintechs, banks, and lending teams: intake, KYC, underwriting, workflow, sanction, disbursement, and audit." />
-  <meta name="theme-color" content="#ffffff" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Finhashy AI | AI LOS and BRE for Modern Lenders" />
-  <meta property="og:description" content="Origination workflow, AI BRE decisioning, underwriting, policy checks, sanction, disbursement, and audit-ready lending operations." />
-  <meta property="og:site_name" content="Finhashy AI" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finhashy AI — AI-Powered Lending Infrastructure</title>
+<meta name="description" content="Connect loan origination and AI-assisted credit decisioning with Finhashy. LOS, business rules, maker-checker and audit controls for NBFCs and fintech lenders.">
+<meta name="theme-color" content="#101d32">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101d32'/%3E%3Cpath d='M9 24V8h15v4H14v3h8v4h-8v5' fill='%23d7f975'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="progress" id="progress" aria-hidden="true"></div>
-
-  <header class="nav" id="nav">
-    <a class="brand" href="#top" aria-label="Finhashy AI home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="26" height="26">
-          <rect x="4" y="4" width="13" height="13" rx="4" fill="none" stroke="url(#lg)" stroke-width="2.6"/>
-          <rect x="15" y="15" width="13" height="13" rx="4" fill="none" stroke="url(#lg)" stroke-width="2.6"/>
-          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/>
-          </linearGradient></defs>
-        </svg>
-      </span>
-      <span class="brand-name">Finhashy<span>AI</span></span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#products">Products</a>
-      <a href="#solution">LOS</a>
-      <a href="#ai">AI BRE</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#why">Why us</a>
-    </nav>
-    <a class="btn btn-primary btn-sm" href="#contact">Book a Demo</a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-
-  <div class="mobile-menu" id="mobile-menu" hidden>
-    <a href="#products">Products</a>
-    <a href="#solution">LOS</a>
-    <a href="#ai">AI BRE</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#why">Why us</a>
-    <a class="btn btn-primary" href="#contact">Book a Demo</a>
-  </div>
-
-  <main id="top">
-    <section class="hero" id="hero">
-      <div class="scene" id="scene" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-grid-lines" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <span class="pill" data-hero>LOS + AI BRE for lenders</span>
-        <h1 class="hero-title">
-          <span data-hero-line>Loan Origination</span>
-          <span data-hero-line>System with</span>
-          <span data-hero-line class="grad">AI BRE</span>
-        </h1>
-        <p class="hero-sub" data-hero>Finhashy AI connects loan origination workflow, policy rules, AI-assisted credit decisions, KYC, underwriting, sanction, disbursement, and audit control in one lending operating layer.</p>
-        <div class="hero-cta" data-hero>
-          <a class="btn btn-primary" href="#contact">Book a Demo</a>
-          <a class="btn btn-outline" href="#products">Explore Products</a>
-        </div>
-        <div class="hero-stats" data-hero>
-          <div><strong>LOS</strong><span>lead to disbursement journey</span></div>
-          <div><strong>BRE</strong><span>policy + AI decisioning</span></div>
-          <div><strong>Audit</strong><span>role-based control history</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="problem">
-      <div class="container">
-        <span class="eyebrow" data-animate>The problem</span>
-        <h2 class="section-title" data-animate>Loan files get delayed when workflow and decisioning live apart.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card"><h3>Manual handoffs</h3><p>RM, credit, verification, sanction, and OPS teams lose time tracking ownership across calls, messages, and spreadsheets.</p></div>
-          <div class="glass card"><h3>Policy leakage</h3><p>Credit policies, deviation rules, FOIR/LTV checks, and approval matrices are hard to enforce when rules sit outside the workflow.</p></div>
-          <div class="glass card"><h3>Slow underwriting</h3><p>Applications wait for KYC, bureau, bank statement review, document checks, and manual credit notes.</p></div>
-          <div class="glass card"><h3>Missing audit trail</h3><p>Operations teams need clear proof of who moved a case, what changed, and why a decision was made.</p></div>
-          <div class="glass card"><h3>Disconnected decisioning</h3><p>AI scores, business rules, fraud signals, and reviewer comments often live in different systems.</p></div>
-          <div class="glass card"><h3>Disbursement risk</h3><p>Files reach OPS without complete checklists, mandates, penny-drop status, or final maker-checker evidence.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="products">
-      <div class="container">
-        <span class="eyebrow" data-animate>Products</span>
-        <h2 class="section-title" data-animate>Two products, one lending stack.</h2>
-        <p class="section-lead" data-animate>Use Finhashy LOS and Finhashy AI BRE together for end-to-end lending operations, or connect the BRE to an existing LOS as a decisioning layer.</p>
-        <div class="grid grid-3 stagger">
-          <div class="glass card soln"><span class="num">LOS</span><h3>Finhashy LOS</h3><p>A multi-role loan origination system for lead capture, KYC, document collection, credit review, sanction, OPS checklist, disbursement, and post-decision evidence.</p></div>
-          <div class="glass card soln"><span class="num">BRE</span><h3>Finhashy AI BRE</h3><p>An AI-assisted business rule engine for eligibility, scorecards, deviations, fraud signals, offer generation, explainability, and real-time decision APIs.</p></div>
-          <div class="glass card soln"><span class="num">Together</span><h3>Connected Credit OS</h3><p>Workflow events, policy gates, AI recommendations, and audit history stay connected from first customer touch to final loan action.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="solution">
-      <div class="container">
-        <span class="eyebrow" data-animate>LOS layer</span>
-        <h2 class="section-title" data-animate>Control every lending stage from RM to OPS.</h2>
-        <p class="section-lead" data-animate>The LOS keeps applications, owners, stages, documents, decisions, checklists, and audit evidence in one controlled workflow.</p>
-        <div class="grid grid-3 stagger">
-          <div class="glass card soln"><span class="num">01</span><h3>Role-based queues</h3><p>RM, CO, BPO, BCM, OPS, admin, and auditor views with clear ownership and next action visibility.</p></div>
-          <div class="glass card soln"><span class="num">02</span><h3>Configurable stages</h3><p>Lead, application, KYC, verification, underwriting, sanction, agreement, mandate, and disbursement journeys.</p></div>
-          <div class="glass card soln"><span class="num">03</span><h3>Document control</h3><p>Collect, classify, verify, generate, and track documents such as KFS, MITC, sanction letters, agreements, and OPS evidence.</p></div>
-          <div class="glass card soln"><span class="num">04</span><h3>Maker-checker flow</h3><p>Approval controls for sanction and disbursement so critical actions have review, authority, and auditability.</p></div>
-          <div class="glass card soln"><span class="num">05</span><h3>Tenant and product setup</h3><p>Support multiple products, branches, partners, roles, limits, fees, and policy parameters per lending team.</p></div>
-          <div class="glass card soln"><span class="num">06</span><h3>SLA and audit visibility</h3><p>Track current owner, current stage, pending action, turnaround risk, escalations, and full application history.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="features">
-      <div class="container">
-        <span class="eyebrow" data-animate>Core platform</span>
-        <h2 class="section-title" data-animate>Core capabilities for digital lending operations.</h2>
-        <div class="grid grid-4 stagger">
-          <div class="glass feature"><div class="fic">01</div><h3>Application intake</h3><p>Capture leads, applicants, products, branches, partners, and required documents.</p></div>
-          <div class="glass feature"><div class="fic">02</div><h3>KYC and verification</h3><p>Structure identity checks, document review, bureau pull, and field or back-office verification.</p></div>
-          <div class="glass feature"><div class="fic">03</div><h3>AI BRE decisioning</h3><p>Run eligibility, scorecards, deviation checks, AI risk signals, and recommendation logic.</p></div>
-          <div class="glass feature"><div class="fic">04</div><h3>Credit workbench</h3><p>Give credit teams a full case context for underwriting, queries, conditions, and approvals.</p></div>
-          <div class="glass feature"><div class="fic">05</div><h3>Sanction workflow</h3><p>Generate offers, terms, conditions, sanction letters, KFS, and approval evidence.</p></div>
-          <div class="glass feature"><div class="fic">06</div><h3>OPS checklist</h3><p>Control mandates, penny-drop, agreement checks, disbursement readiness, and final maker-checker.</p></div>
-          <div class="glass feature"><div class="fic">07</div><h3>Integrations</h3><p>Connect bureau, KYC, OCR, bank statements, NACH, payments, notifications, and LMS systems.</p></div>
-          <div class="glass feature"><div class="fic">08</div><h3>Audit and security</h3><p>RBAC, tenant isolation, PII masking, event history, and policy-gate evidence for every file.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ai">
-      <div class="container">
-        <span class="eyebrow" data-animate>AI BRE layer</span>
-        <h2 class="section-title" data-animate>Business rules plus AI for explainable credit decisions.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card ai"><h3>Policy rule engine</h3><p>Configure product rules, FOIR, DTI, LTV, tenure, bureau, exposure, deviations, and approval conditions.</p></div>
-          <div class="glass card ai"><h3>AI risk scoring</h3><p>Use ML-assisted probability of default, fraud indicators, affordability signals, and alternate-data inputs.</p></div>
-          <div class="glass card ai"><h3>Decision API</h3><p>Return approve, reject, conditional approve, query, manual review, pricing, limits, reasons, and audit metadata.</p></div>
-          <div class="glass card ai"><h3>Explainability</h3><p>Show why a decision was recommended with reviewer-friendly reasons and regulator-ready evidence.</p></div>
-          <div class="glass card ai"><h3>Underwriting copilot</h3><p>Generate case summaries, missing-data prompts, policy exceptions, and reviewer notes from the full application file.</p></div>
-          <div class="glass card ai"><h3>Fallback control</h3><p>Keep deterministic scorecards and manual-review paths available when live AI or vendor data is unavailable.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="built-for">
-      <div class="container">
-        <span class="eyebrow" data-animate>Built for</span>
-        <h2 class="section-title" data-animate>Made for lending teams that need control, speed, and evidence.</h2>
-        <div class="chips stagger">
-          <span class="glass chip">NBFCs</span>
-          <span class="glass chip">Banks</span>
-          <span class="glass chip">Fintech startups</span>
-          <span class="glass chip">Co-lending teams</span>
-          <span class="glass chip">Credit teams</span>
-          <span class="glass chip">Operations teams</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="workflow">
-      <div class="container">
-        <span class="eyebrow" data-animate>Workflow</span>
-        <h2 class="section-title" data-animate>A connected journey from lead to disbursement.</h2>
-        <div class="flow" id="flow">
-          <div class="flow-line" aria-hidden="true"><span class="flow-fill" id="flow-fill"></span></div>
-          <div class="flow-steps">
-            <div class="flow-step"><span class="dot"></span><strong>RM Intake</strong><p>Lead, product, applicant, and document capture.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>KYC &amp; Docs</strong><p>Identity, document, and checklist readiness.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Bureau/Data</strong><p>Bureau, bank statement, income, and fraud signals.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>AI BRE</strong><p>Eligibility, scorecard, deviation, and recommendation.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Credit Review</strong><p>CO/BCM review, queries, conditions, and approval.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Sanction</strong><p>Offer, terms, KFS, MITC, and sanction evidence.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>OPS Check</strong><p>Agreement, mandate, penny-drop, and maker-checker.</p></div>
-            <div class="flow-step"><span class="dot"></span><strong>Disburse</strong><p>Payout execution, final lock, and audit trail.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="why">
-      <div class="container">
-        <span class="eyebrow" data-animate>Why Finhashy AI</span>
-        <h2 class="section-title" data-animate>Built to reduce TAT without losing governance.</h2>
-        <div class="grid grid-3 stagger">
-          <div class="glass card why"><h3>Reduce turnaround time</h3><p>Automate routing, data checks, decision triggers, queries, and OPS readiness instead of chasing files manually.</p></div>
-          <div class="glass card why"><h3>Enforce policy consistently</h3><p>Keep business rules, AI signals, deviations, and approval authority connected to each workflow movement.</p></div>
-          <div class="glass card why"><h3>Improve audit confidence</h3><p>Maintain complete ownership, stage, decision, document, and maker-checker history for every application.</p></div>
-          <div class="glass card why"><h3>Launch products faster</h3><p>Configure lending journeys, product parameters, rules, documents, and roles without rebuilding the operating model.</p></div>
-          <div class="glass card why"><h3>Integrate cleanly</h3><p>Connect vendor systems and internal platforms through APIs while keeping one operational source of truth.</p></div>
-          <div class="glass card why"><h3>Support AI safely</h3><p>Use AI recommendations with explanations, fallback scorecards, and human review paths where governance requires it.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="contact">
-      <div class="cta-glow" aria-hidden="true"></div>
-      <div class="container cta-inner" data-animate>
-        <h2>Modernize lending with LOS + AI BRE.</h2>
-        <p>Talk to us if you want faster loan processing, stronger policy control, and audit-ready digital lending operations.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="mailto:info@finhashy.com">Contact Us</a>
-          <a class="btn btn-outline" href="mailto:info@finhashy.com?subject=Book%20a%20Demo">Book Demo</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <span class="brand-name">Finhashy<span>AI</span></span>
-        <p>AI-powered LOS and BRE for modern lending teams.</p>
-      </div>
-      <div class="footer-contact">
-        <a href="mailto:info@finhashy.com">info@finhashy.com</a>
-        <a href="tel:+919790341202">+91 9790341202</a>
-        <a href="https://www.linkedin.com/company/fincore-tech" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-    <div class="container footer-bottom">&copy; <span id="year"></span> Finhashy AI. All rights reserved.</div>
-  </footer>
-
-  <script type="module" src="/main.js"></script>
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><div class="nav wrap"><a class="brand" href="#" aria-label="Finhashy AI home"><span class="brand-mark" aria-hidden="true">f</span>finhashy<span class="brand-ai">AI</span></a><button class="menu-toggle" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false">Menu <span>☰</span></button><nav id="navigation" aria-label="Main navigation"><a href="#platform">Platform</a><a href="#solutions">Solutions</a><a href="#controls">Security & control</a><a href="#company">Company</a><a href="#demo" class="button dark small">Book a Demo</a></nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow"><span class="line"></span> BUILT FOR THE WAY YOU LEND</p><h1>AI-Powered<br>Lending<br><span>Infrastructure.</span></h1><p class="hero-description">Originate faster. Decide smarter.<br>Stay in control.</p><p class="body-copy">Connect loan origination and AI-assisted credit decisions in one operating layer. Built for NBFCs and fintech lenders.</p><div class="actions"><a href="#demo" class="button lime">Book a Demo</a><a href="#platform" class="button outline">Explore the platform</a></div><div class="hero-foot"><span>FINHASHY LOS</span><i></i><span>AI BRE</span><i></i><span>CONNECTED BY DESIGN</span></div></div>
+<div class="hero-product"><div class="product-caption"><span>FROM APPLICATION TO ACTION</span><span>LOS + AI BRE</span></div><div class="app-window"><div class="window-top"><span class="mini-brand">f <b>finhashy</b></span><span class="workspace-label">Lending workspace</span><span class="avatar">CR</span></div><div class="workspace"><aside class="app-sidebar"><span class="side-item">◫ <span>Overview</span></span><span class="side-item active">▤ <span>Applications</span></span><span class="side-item">◇ <span>Credit review</span></span><span class="side-item">≡ <span>Policy rules</span></span><span class="side-item">⊡ <span>Audit trail</span></span><span class="side-bottom">NBFC workspace</span></aside><div class="app-content"><div class="app-heading"><div><p class="micro">APPLICATION WORKSPACE</p><h3>Every case. In context.</h3></div><span class="pill neutral">Sample view</span></div><div class="app-tabs"><button type="button" class="selected" data-view="pipeline" aria-pressed="true">Applications</button><button type="button" data-view="decision" aria-pressed="false">Credit decision</button></div><div id="showcase-content"><div class="case-top"><span>Application FH-DEMO</span><span class="pill amber">Credit review</span></div><div class="case-title"><div class="avatar borrower">S</div><div><b>Sample business applicant</b><small>Business lending · Illustrative case</small></div></div><div class="case-fields"><div><small>Assigned to</small><b>Credit team</b></div><div><small>Current stage</small><b>Underwriting</b></div></div><div class="check-list"><div><span class="check">✓</span><span>Identity & documents</span><span class="status">Verified</span></div><div><span class="check">✓</span><span>Policy evaluation</span><span class="status">Completed</span></div><div><span class="pending">◷</span><span>Credit approval</span><span class="muted">In review</span></div></div><div class="case-note"><span class="note-icon">◇</span><div><b>One file. A clear next step.</b><small>Review policy reasons and approval conditions.</small></div></div></div></div></div></div><div class="decision-float"><span class="decision-symbol">✦</span><div><p>AI BRE · DECISION CONTEXT</p><b>Policy checks, with reasons.</b><span>Human review stays in the loop.</span></div><span class="check">✓</span></div><p class="illustration-note">Illustrative product interface · sample data</p></div></div></section>
+<div class="audience-strip"><div class="wrap"><p>YOUR LENDING OPERATIONS.<br><b>ONE CONNECTED FOUNDATION.</b></p><span>NBFCs</span><span>Fintech lenders</span><span>Credit teams</span><span>Operations teams</span></div></div>
+<section class="section" id="platform"><div class="wrap"><div class="section-intro"><div><p class="eyebrow">THE FINHASHY PLATFORM</p><h2>Two powerful products.<br>One connected lending journey.</h2></div><p>Use LOS and AI BRE together, or bring intelligent decisioning into your existing loan origination system.</p></div><div class="product-grid">
+<article class="product-card" id="los"><div class="card-heading"><span class="product-icon">▤</span><span class="product-tag">01 / ORIGINATE</span></div><h3>Finhashy LOS</h3><p>Give every application a clear path from intake to disbursement, with the right people and evidence at every stage.</p><div class="mini-workflow" aria-label="Illustrative loan stages"><span class="done">✓ Intake</span><i></i><span class="done">✓ KYC</span><i></i><span class="current">Credit</span><i></i><span>Sanction</span></div><ul class="feature-list"><li>Role-based queues and application ownership</li><li>Configurable stages, products and branches</li><li>Document collection and sanction generation</li><li>Operations checklists and approval controls</li></ul><a href="#workflow" class="text-link">Explore the lending workflow</a></article>
+<article class="product-card bre-card" id="bre"><div class="card-heading"><span class="product-icon">✦</span><span class="product-tag">02 / DECIDE</span></div><h3>Finhashy AI BRE</h3><p>Bring policy rules, scorecards and AI-assisted risk signals into decisions your credit team can understand and review.</p><div class="rule-preview"><span>POLICY + RISK SIGNALS</span><div><code>Evaluate</code><i></i><code>Explain</code><i></i><code>Review</code></div></div><ul class="feature-list"><li>Eligibility, FOIR, DTI, LTV and deviation rules</li><li>Risk signals and underwriting assistance</li><li>Decision APIs with reasons and audit metadata</li><li>Deterministic fallbacks and manual review paths</li></ul><a href="#demo" class="text-link">See decisioning in a demo</a></article></div></div></section>
+<section class="section workflow-section" id="workflow"><div class="wrap"><div class="section-intro"><div><p class="eyebrow">FROM FIRST TOUCH TO FINAL ACTION</p><h2>Move the application.<br>Keep the context.</h2></div><p>Documents, policy checks, approvals and ownership travel with the file. Every handoff has a next step.</p></div><div class="workflow-layout"><div class="workflow-steps" aria-label="Lending workflow stages"><button type="button" class="workflow-step selected" data-step="0" aria-pressed="true"><span>01</span><div><b>Lead & application</b><small>Bring the borrower into the workflow</small></div></button><button type="button" class="workflow-step" data-step="1" aria-pressed="false"><span>02</span><div><b>KYC & data checks</b><small>Build the evidence behind the case</small></div></button><button type="button" class="workflow-step" data-step="2" aria-pressed="false"><span>03</span><div><b>Underwriting & AI BRE</b><small>Apply policy with human oversight</small></div></button><button type="button" class="workflow-step" data-step="3" aria-pressed="false"><span>04</span><div><b>Sanction & documentation</b><small>Turn approvals into controlled offers</small></div></button><button type="button" class="workflow-step" data-step="4" aria-pressed="false"><span>05</span><div><b>OPS & disbursement</b><small>Complete checks before the final action</small></div></button></div><div class="workflow-detail" aria-live="polite"><div class="detail-top"><span>THE CONNECTED JOURNEY</span><span id="stage-count">01 / 05</span></div><span class="detail-glyph" aria-hidden="true">▤</span><h3 id="stage-title">Start with a complete application.</h3><p id="stage-description">Capture the applicant, lending product, branch and partner details in a shared file, with clear ownership from the start.</p><ul id="stage-items"><li>Lead and applicant intake</li><li>Product and branch assignment</li><li>Document collection</li></ul><div class="detail-footer"><span class="check">✓</span> Application context stays connected</div></div></div></div></section>
+<section class="section" id="solutions"><div class="wrap"><div class="section-intro"><div><p class="eyebrow">BUILT AROUND YOUR TEAM</p><h2>Your lending model.<br>Your operating rhythm.</h2></div><p>Connect the people who originate loans, assess risk and prepare cases for disbursement.</p></div><div class="solutions-grid"><article><span class="solution-icon">▥</span><h3>NBFC operations</h3><p>Coordinate branches, partners and lending products with defined ownership, policy gates and operations checklists.</p><span class="solution-label">FROM RM TO OPS</span></article><article><span class="solution-icon">⌘</span><h3>Fintech lending</h3><p>Connect digital application journeys to decision APIs, or add AI BRE to an existing origination stack.</p><span class="solution-label">API-CONNECTED DECISIONING</span></article><article><span class="solution-icon">◇</span><h3>Credit & risk teams</h3><p>Review eligibility, deviations and supporting evidence together, with explanations and manual review paths.</p><span class="solution-label">CONTEXT FOR EVERY DECISION</span></article></div></div></section>
+<section class="section integration-section" id="integrations"><div class="wrap integration-grid"><div><p class="eyebrow">CONNECTED TO YOUR ECOSYSTEM</p><h2>A lending layer.<br>Not another silo.</h2><p class="section-copy">Bring the data and services behind each loan into the workflow through APIs.</p><p class="integration-note">Integration scope and provider availability are discussed during your demo. No vendor partnership is implied.</p><a href="#demo" class="button dark">Discuss your integrations</a></div><div class="integration-map"><div class="integration-core"><span class="brand-mark">f</span><div><b>Finhashy</b><small>LOS + AI BRE</small></div><span class="api-label">API</span></div><div class="integration-items"><div><span>01</span><b>Identity & KYC</b><small>Applicant verification</small></div><div><span>02</span><b>Credit bureaus</b><small>Credit data inputs</small></div><div><span>03</span><b>OCR & documents</b><small>Document data extraction</small></div><div><span>04</span><b>Bank statements</b><small>Income and affordability inputs</small></div><div><span>05</span><b>NACH & payments</b><small>Mandates and payout flows</small></div><div><span>06</span><b>LMS & notifications</b><small>Connected downstream systems</small></div></div></div></div></section>
+<section class="section controls-section" id="controls"><div class="wrap"><div class="section-intro"><div><p class="eyebrow">CONTROL IS PART OF THE WORKFLOW</p><h2>Move forward.<br>Keep accountability close.</h2></div><p>Keep access, approval authority and decision evidence connected to the application.</p></div><div class="controls-grid"><article><span class="control-number">01</span><h3>Access with boundaries</h3><p>Role-based access, tenant isolation and PII masking support controlled access to sensitive information.</p></article><article><span class="control-number">02</span><h3>Maker. Checker.<br>Clear authority.</h3><p>Review gates for sanction and disbursement keep critical actions within the approval process.</p></article><article><span class="control-number">03</span><h3>A history you can follow</h3><p>Trace ownership, stage changes, documents and policy evidence through the application’s event history.</p></article></div><div class="control-bottom"><span>AI-assisted. Human-governed.</span><p>Decision explanations, fallback scorecards and manual review paths help your teams stay in control.</p></div></div></section>
+<section class="section benefits-section"><div class="wrap"><p class="eyebrow">LESS FRICTION. MORE CLARITY.</p><h2>Better-connected work.<br>Better lending operations.</h2><div class="benefits-grid"><article><span>01</span><h3>Fewer manual handoffs</h3><p>Make the next owner and pending action visible.</p></article><article><span>02</span><h3>Consistent policy checks</h3><p>Apply rules and approval conditions within the journey.</p></article><article><span>03</span><h3>Evidence at hand</h3><p>Keep the context behind decisions in the application history.</p></article><article><span>04</span><h3>Room to configure</h3><p>Adapt products, roles and parameters to your lending process.</p></article></div></div></section>
+<section class="section company-section" id="company"><div class="wrap company-grid"><div><p class="eyebrow">MEET FINHASHY</p><h2>Built around the work<br>behind every loan.</h2><p class="section-copy">Finhashy brings origination and credit decisioning into one operating layer for modern lending teams.</p><p class="section-copy">A useful conversation starts with your actual process: who owns each stage, where policy is applied, and what evidence your team needs.</p><a class="text-link" href="mailto:info@finhashy.com?subject=Let%27s%20discuss%20Finhashy">Talk to the Finhashy team</a></div><div class="company-proof"><p class="eyebrow">GET TO KNOW THE PLATFORM</p><h3>See the product.<br>Bring your questions.</h3><ul><li><b>Walk through the workflow</b><span>From the first application to disbursement readiness.</span></li><li><b>Explore your policy requirements</b><span>Discuss rules, deviations and approval authority.</span></li><li><b>Review the fit for your systems</b><span>Cover integrations, access controls and configuration.</span></li></ul><a href="tel:+919790341202">+91 97903 41202</a></div></div></section>
+<section class="demo-section" id="demo"><div class="wrap demo-grid"><div><p class="eyebrow">LET’S TALK LENDING</p><h2>Your next lending chapter<br>starts with a conversation.</h2><p>See how Finhashy LOS and AI BRE can fit your team, your policies and your lending journey.</p><div class="contact-lines"><a href="mailto:info@finhashy.com">info@finhashy.com</a><a href="tel:+919790341202">+91 97903 41202</a></div></div><form id="demo-form"><h3>Book a Demo</h3><div class="form-row"><label>Your name<input name="name" autocomplete="name" placeholder="Full name" required maxlength="100"></label><label>Work email<input name="email" type="email" autocomplete="email" placeholder="you@company.com" required maxlength="200"></label></div><label>Company<input name="company" autocomplete="organization" placeholder="Company name" required maxlength="150"></label><label>I’m interested in<select name="interest"><option>LOS + AI BRE</option><option>Finhashy LOS</option><option>AI BRE for my existing LOS</option><option>Integration and platform discussion</option></select></label><button class="button lime" type="submit">Request a demo by email</button><p class="form-note">Opens your email app with your enquiry. Nothing is submitted or stored on this website.</p><p id="form-status" role="status" hidden>Your email draft is ready. Send it from your email app to request a demo. If it did not open, email info@finhashy.com directly.</p></form></div></section>
+</main>
+<footer><div class="wrap footer-main"><a class="brand" href="#"><span class="brand-mark">f</span>finhashy<span class="brand-ai">AI</span></a><p>Lending technology.<br>Built around your decisions.</p><a href="mailto:info@finhashy.com">info@finhashy.com</a></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> Finhashy AI. All rights reserved.</span><span>Loan origination · Credit decisioning · Control</span></div></footer>
+</body></html>

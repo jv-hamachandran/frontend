@@ -1,88 +1,28 @@
-# Finhashy AI Company Site
+# Finhashy AI website
 
-A clean light company website for Finhashy AI, positioned around two lending
-products:
+Marketing website for Finhashy LOS and AI BRE. Vite, vanilla JavaScript and responsive CSS.
 
-- Finhashy LOS: loan origination workflow from RM intake to OPS/disbursement.
-- Finhashy AI BRE: AI-assisted business rule engine for eligibility, policy
-  checks, scorecards, deviations, explainability, and decision APIs.
+## Develop
 
-The public site is intentionally outcome-led. It describes the company,
-platform, LOS, AI BRE, workflow, governance, and integrations without exposing
-internal product screens or implementation details.
-
-## Tech Stack
-
-- Vite for local development and production builds
-- Vanilla JavaScript
-- Three.js for the subtle hero wireframe scene
-- GSAP ScrollTrigger for scroll animation
-- Lenis for smooth scrolling
-- Inter via Google Fonts
-
-## Local Development
-
-Run from this `website/` folder:
-
-```bash
-npm install
+```sh
+npm ci
 npm run dev
 ```
 
-Open:
+Edit `src/index.html`, `src/style.css`, and `src/main.js`. Product interfaces are illustrative and use sample data.
 
-```text
-http://localhost:5173
-```
+## Build and publish
 
-## Build
-
-```bash
+```sh
 npm run build
 ```
 
-The Vite source lives under `src/` and builds into `dist/`.
+Builds `dist/` and synchronizes the generated HTML and assets to the repository root for the existing GitHub Pages branch/root hosting. Commit both source and generated files. Preserve `CNAME` and `.nojekyll`. Do not edit the generated root `index.html` directly.
 
-For GitHub Pages branch/root hosting, the current production build is also
-checked in at the repo root:
+## Demo enquiries
 
-- `index.html`
-- `assets/`
-- `CNAME`
-- `.nojekyll`
+The form validates name, email and company, then opens an email draft addressed to info@finhashy.com. Visitors must send the email themselves. There is no submission backend and no website storage of enquiries. Connect an approved form backend before advertising automatic booking or confirmed submissions.
 
-After future source edits, run `npm run build`, then copy `dist/index.html` and
-`dist/assets/` back to the repo root before committing.
+## Verify
 
-## Project Structure
-
-```text
-website/
-|-- index.html          # Built static page for GitHub Pages
-|-- assets/             # Built static assets for GitHub Pages
-|-- CNAME               # www.finhashy.com
-|-- vite.config.js
-|-- package.json
-|-- package-lock.json
-|-- README.md
-`-- src/
-    |-- index.html      # Editable site content
-    |-- main.js         # Lenis + GSAP + scene wiring
-    |-- scene.js        # Three.js hero wireframe scene
-    `-- style.css       # Light theme + responsive layout
-```
-
-## Content Focus
-
-- Loan origination system for NBFCs, banks, fintechs, and lending teams
-- RM, CO, BPO, BCM, OPS, admin, and auditor workflow ownership
-- KYC, documents, bureau/data, underwriting, sanction, agreement, mandate,
-  disbursement, and audit trail
-- AI BRE for policy rules, FOIR, DTI, LTV, deviations, risk scoring,
-  explainability, decision APIs, and fallback scorecards
-
-## Contact
-
-- Email: `info@finhashy.com`
-- Phone: `+91 97903 41202`
-- LinkedIn: `https://www.linkedin.com/company/fincore-tech`
+Check desktop and mobile layouts, navigation, product view buttons, all five workflow stages, required form fields, and reduced-motion behavior. No customer logos, performance metrics or certifications are implied by the illustrations.

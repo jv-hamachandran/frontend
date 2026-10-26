@@ -6,7 +6,7 @@
   "description": "Premium landing site for Finhashy AI LOS and AI BRE lending products.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/sync-pages.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

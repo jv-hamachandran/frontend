@@ -26,3 +26,7 @@ The form validates name, email and company, then opens an email draft addressed 
 ## Verify
 
 Check desktop and mobile layouts, navigation, product view buttons, all five workflow stages, required form fields, and reduced-motion behavior. No customer logos, performance metrics or certifications are implied by the illustrations.
+
+## Typography
+
+DM Serif Display for editorial headings and DM Sans for body text and interface labels, served through Google Fonts with local system fallbacks. These free fonts approximate the reference style without using Sarvam’s proprietary fonts.
